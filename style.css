@@ -21,6 +21,9 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 6rem;
 }
+section {
+  padding: 2rem 9%;
+}
 .btn {
   background: var(--orange);
   padding: 0.8rem 3rem;
@@ -185,6 +188,77 @@ header .search-bar-container label:hover {
   cursor: pointer;
   display: none;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+.home .content {
+  text-align: center;
+}
+.home .content h3 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+
+}
+
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+padding: .5rem 0;
+
+}
+
+.home .video-container video{
+  position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+object-fit: cover;
+}
+.home .controls {
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 10rem;
+}
+.home .controls .video-btn {
+height: 2rem;
+width: 2rem;
+background-color: #fff;
+border-radius: 50%;
+cursor: pointer;
+margin: 0 .5rem;
+display: inline-block;
+}
+.home .controls .video-btn.active{
+  background-color: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1200px) {
   html {
@@ -193,6 +267,9 @@ header .search-bar-container label:hover {
 }
 @media (max-width: 991px) {
   header {
+    padding: 2rem;
+  }
+  section{
     padding: 2rem;
   }
 }
@@ -225,4 +302,3 @@ header .search-bar-container label:hover {
     font-size: 50%;
   }
 }
-
