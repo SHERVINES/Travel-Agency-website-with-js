@@ -485,6 +485,9 @@ header .search-bar-container label:hover {
   width: 100%;
   height: 15rem;
 }
+.brand-container {
+  text-align: center;
+}
 
 
 
